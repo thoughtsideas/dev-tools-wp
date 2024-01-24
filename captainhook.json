@@ -11,6 +11,9 @@
         "enabled": true,
         "actions": [
             {
+                "action": "composer run test:license"
+            },
+            {
                 "action": "composer run test:lint"
             },
             {
