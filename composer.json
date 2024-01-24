@@ -1,0 +1,66 @@
+{
+    "name": "thoughtsideas/dev-tools-wp",
+    "description": "A collection of development tools for WordPress projects. Helping simplift and standardise your development process.",
+    "license": "MIT",
+    "type": "metapackage",
+    "authors": [
+        {
+            "name": "Thoughts & Ideas",
+            "email": "hello@thoughtsandideas.uk",
+            "homepage": "https://thoughtsandideas.uk/",
+            "role": "Agency"
+        },
+        {
+            "name": "Michael Bragg",
+            "email": "email@michaelbragg.com",
+            "homepage": "https://www.michaelbragg.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "thoughtsideas/dev-tools-php": "dev-trunk"
+    },
+    "require-dev": {
+        "captainhook/captainhook": "^5.20",
+        "ergebnis/composer-normalize": "^2.41",
+        "madewithlove/license-checker": "^1.5",
+        "phly/keep-a-changelog": "^2.12",
+        "phpcompatibility/php-compatibility": "dev-develop as 9.99.99@dev",
+        "roave/security-advisories": "dev-latest@dev"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true,
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "optimize-autoloader": true,
+        "prefer-stable": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "composer-normalize": {
+            "indent-size": 4,
+            "indent-style": "space"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "vendor/bin/captainhook install -f -s"
+        ],
+        "test:license": "vendor/bin/license-checker check",
+        "test:lint": "composer validate --ansi --strict",
+        "test:security": "composer audit --ansi"
+    },
+    "scripts-descriptions": {
+        "test:license": "Check licenses are compatible.",
+        "test:lint": "Lint file syntax.",
+        "test:security": "Check for security issues."
+    }
+}
