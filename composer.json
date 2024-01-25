@@ -18,7 +18,13 @@
         }
     ],
     "require": {
-        "thoughtsideas/dev-tools-php": "dev-trunk"
+        "brain/monkey": "^2.6",
+        "php-stubs/woocommerce-stubs": "^8.5",
+        "php-stubs/wp-cli-stubs": "^2.9",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "szepeviktor/phpstan-wordpress": "^1.3",
+        "thoughtsideas/dev-tools-php": "dev-trunk@dev",
+        "wp-coding-standards/wpcs": "^3.0"
     },
     "require-dev": {
         "captainhook/captainhook": "^5.20",

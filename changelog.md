@@ -6,7 +6,19 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
-- Nothing
+- WooCommerce Stubs
+
+- Brain Monkey
+
+- WP Coding Standards
+
+- PHPStan WordPress Stubs
+
+- PHP Compatibility WP
+
+- WP CLI Stubs
+
+- Dev Tools PHP
 
 ### Changed
 
