@@ -27,7 +27,7 @@
         "wp-coding-standards/wpcs": "^3.0"
     },
     "require-dev": {
-        "captainhook/captainhook": "^5.20",
+        "captainhook/captainhook": "^5.21",
         "ergebnis/composer-normalize": "^2.41",
         "madewithlove/license-checker": "^1.5",
         "phly/keep-a-changelog": "^2.12",
